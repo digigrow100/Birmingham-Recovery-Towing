@@ -55,8 +55,8 @@ function Home() {
             {[
               { k: "24/7", v: "Always Open" },
               { k: "Fast", v: "Response Time" },
-              { k: "50+", v: "Reviews" },
-              { k: "5★", v: "Google Rated" },
+              { k: "Trusted", v: "Google Reviews" },
+              { k: "Top", v: "Rated Service" },
             ].map((s) => (
               <div key={s.k} className="rounded-2xl border border-border bg-card/60 px-4 py-3 backdrop-blur-xl">
                 <div className="text-2xl font-black text-primary">{s.k}</div>
@@ -93,7 +93,7 @@ function Home() {
             { i: Users, t: "Experienced Team", d: "Trained operators who handle your vehicle with the utmost care." },
             { i: Banknote, t: "Affordable Prices", d: "Fair, transparent pricing with no hidden fees — ever." },
             { i: ShieldCheck, t: "Fully Insured", d: "Fully insured recovery fleet with a trusted track record across the UK." },
-            { i: Star, t: "5-Star Rated", d: "Over 40 five-star Google reviews from real customers across Birmingham and West Midlands." },
+            { i: Star, t: "Highly Rated", d: "Glowing Google reviews from real customers across Birmingham and West Midlands." },
           ].map((w) => (
             <div key={w.t} className="rounded-3xl border border-border bg-card/60 p-7 backdrop-blur-xl transition hover:border-primary/50">
               <div className="grid h-12 w-12 place-items-center rounded-2xl bg-primary/15 text-primary"><w.i className="h-6 w-6" /></div>
