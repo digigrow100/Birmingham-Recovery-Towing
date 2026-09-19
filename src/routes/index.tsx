@@ -4,6 +4,7 @@ import { ServiceCard } from "@/components/site/ServiceCard";
 import { EmergencyCTA } from "@/components/site/EmergencyCTA";
 import { ContactForm } from "@/components/site/ContactForm";
 import { AreasCovered } from "@/components/site/AreasCovered";
+import { ReviewsCarousel } from "@/components/site/ReviewsCarousel";
 import { SERVICES } from "@/lib/services";
 import { IMG, PHONE, PHONE_DISPLAY, WHATSAPP } from "@/lib/assets";
 import { pageMeta } from "@/lib/seo";
@@ -122,6 +123,8 @@ function Home() {
       </section>
 
       <EmergencyCTA />
+
+      <ReviewsCarousel />
 
       <AreasCovered />
 
