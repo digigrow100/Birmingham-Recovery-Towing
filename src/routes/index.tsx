@@ -3,6 +3,7 @@ import { SiteLayout } from "@/components/site/Layout";
 import { ServiceCard } from "@/components/site/ServiceCard";
 import { EmergencyCTA } from "@/components/site/EmergencyCTA";
 import { ContactForm } from "@/components/site/ContactForm";
+import { AreasCovered } from "@/components/site/AreasCovered";
 import { ReviewsCarousel } from "@/components/site/ReviewsCarousel";
 import { SERVICES } from "@/lib/services";
 import { IMG, PHONE, PHONE_DISPLAY, WHATSAPP } from "@/lib/assets";
@@ -124,6 +125,8 @@ function Home() {
       <EmergencyCTA />
 
       <ReviewsCarousel />
+
+      <AreasCovered />
 
       <section className="mx-auto max-w-7xl px-4 sm:px-6 py-20">
         <h2 className="text-4xl md:text-5xl font-black text-center">Our Gallery</h2>
