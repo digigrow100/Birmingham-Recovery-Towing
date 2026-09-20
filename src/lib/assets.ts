@@ -34,7 +34,6 @@ export const IMG = {
 
 export const PHONE = "+447392429947";
 export const PHONE_DISPLAY = "+44 7392 429947";
-export const WHATSAPP = "https://wa.me/447392429947";
 export const EMAIL = "baqoshirecovery24@gmail.com";
 export const ADDRESS = "Birmingham, West Midlands, United Kingdom";
 export const BRAND = "Birmingham Recovery & Towing";
