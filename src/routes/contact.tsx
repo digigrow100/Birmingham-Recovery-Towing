@@ -2,13 +2,13 @@ import { createFileRoute } from "@tanstack/react-router";
 import { SiteLayout } from "@/components/site/Layout";
 import { PageHero } from "@/components/site/PageHero";
 import { ContactForm } from "@/components/site/ContactForm";
-import { IMG, PHONE, PHONE_DISPLAY, WHATSAPP, EMAIL, ADDRESS } from "@/lib/assets";
+import { IMG, PHONE, PHONE_DISPLAY, EMAIL, ADDRESS } from "@/lib/assets";
 import { pageMeta } from "@/lib/seo";
-import { Phone, Mail, MapPin, MessageCircle } from "lucide-react";
+import { Phone, Mail, MapPin } from "lucide-react";
 
 export const Route = createFileRoute("/contact")({
   head: () => ({
-    meta: pageMeta({ title: "Contact Us — Birmingham Recovery & Towing | 24/7 Car Recovery Birmingham", description: "Call or WhatsApp Birmingham Recovery & Towing 24/7 for emergency car recovery, breakdown recovery and roadside assistance across Birmingham & the West Midlands.", path: "/contact", image: IMG.roadsideAssistance }),
+    meta: pageMeta({ title: "Contact Us — Birmingham Recovery & Towing | 24/7 Car Recovery Birmingham", description: "Call Birmingham Recovery & Towing 24/7 for emergency car recovery, breakdown recovery and roadside assistance across Birmingham & the West Midlands.", path: "/contact", image: IMG.roadsideAssistance }),
     links: [{ rel: "canonical", href: "https://247recoverybirmingham.co.uk/contact" }],
   }),
   component: ContactPage,
@@ -23,7 +23,6 @@ function ContactPage() {
           <div className="grid gap-4">
             {[
               { i: Phone, t: "Phone (24/7)", v: PHONE_DISPLAY, href: `tel:${PHONE}` },
-              { i: MessageCircle, t: "WhatsApp", v: "Message us instantly", href: WHATSAPP },
               { i: Mail, t: "Email", v: EMAIL, href: `mailto:${EMAIL}` },
               { i: MapPin, t: "Address", v: ADDRESS, href: `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(ADDRESS)}` },
             ].map((c) => (
