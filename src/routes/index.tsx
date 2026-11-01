@@ -5,10 +5,11 @@ import { EmergencyCTA } from "@/components/site/EmergencyCTA";
 import { ContactForm } from "@/components/site/ContactForm";
 import { AreasCovered } from "@/components/site/AreasCovered";
 import { ReviewsCarousel } from "@/components/site/ReviewsCarousel";
+import { WhatsAppIcon } from "@/components/site/WhatsAppIcon";
 import { SERVICES } from "@/lib/services";
 import { IMG, PHONE, PHONE_DISPLAY, WHATSAPP } from "@/lib/assets";
 import { pageMeta } from "@/lib/seo";
-import { Phone, MessageCircle, Clock, Zap, Users, Banknote, ShieldCheck, Star, PhoneCall, Truck, CheckCircle2 } from "lucide-react";
+import { Phone, Clock, Zap, Users, Banknote, ShieldCheck, Star, PhoneCall, Truck, CheckCircle2 } from "lucide-react";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -48,7 +49,7 @@ function Home() {
               <Phone className="h-5 w-5" /> Call {PHONE_DISPLAY}
             </a>
             <a href={WHATSAPP} className="inline-flex items-center gap-2 rounded-full bg-[#25D366] px-7 py-4 text-base font-semibold text-white shadow-xl hover:scale-[1.02] transition">
-              <MessageCircle className="h-5 w-5" /> WhatsApp Now
+              <WhatsAppIcon className="h-5 w-5" /> WhatsApp Now
             </a>
           </div>
           <div className="mt-8 grid grid-cols-2 md:grid-cols-4 gap-4 max-w-3xl">
