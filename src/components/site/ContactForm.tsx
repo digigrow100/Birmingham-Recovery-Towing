@@ -6,8 +6,8 @@ export function ContactForm({ defaultService }: { defaultService?: string }) {
   function onSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
     const data = new FormData(e.currentTarget);
-    const msg = `Hi, I need ${data.get("service") || "assistance"}.%0AName: ${data.get("name")}%0APhone: ${data.get("phone")}%0ALocation: ${data.get("location")}%0ADetails: ${data.get("message")}`;
-    window.open(`${WHATSAPP}?text=${msg}`, "_blank");
+    const msg = `Hi, I need ${data.get("service") || "assistance"}.\nName: ${data.get("name")}\nPhone: ${data.get("phone")}\nLocation: ${data.get("location")}\nDetails: ${data.get("message")}`;
+    window.open(`${WHATSAPP}?text=${encodeURIComponent(msg)}`, "_blank");
     setSent(true);
   }
   return (
