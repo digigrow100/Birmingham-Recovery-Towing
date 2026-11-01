@@ -1,7 +1,8 @@
 import { Link } from "@tanstack/react-router";
+import { WhatsAppIcon } from "@/components/site/WhatsAppIcon";
 import { IMG, PHONE, PHONE_DISPLAY, WHATSAPP, EMAIL, ADDRESS, BRAND } from "@/lib/assets";
 import { SERVICES } from "@/lib/services";
-import { Phone, Mail, MapPin, MessageCircle } from "lucide-react";
+import { Phone, Mail, MapPin } from "lucide-react";
 
 export function Footer() {
   return (
@@ -35,7 +36,7 @@ export function Footer() {
           <h3 className="text-sm font-semibold uppercase tracking-wider text-foreground">Contact</h3>
           <ul className="mt-4 space-y-3 text-sm text-muted-foreground">
             <li className="flex items-start gap-2"><Phone className="h-4 w-4 mt-0.5 text-primary" /><a href={`tel:${PHONE}`} className="hover:text-primary">{PHONE_DISPLAY}</a></li>
-            <li className="flex items-start gap-2"><MessageCircle className="h-4 w-4 mt-0.5 text-primary" /><a href={WHATSAPP} className="hover:text-primary">WhatsApp</a></li>
+            <li className="flex items-start gap-2"><WhatsAppIcon className="h-4 w-4 mt-0.5 text-primary" /><a href={WHATSAPP} className="hover:text-primary">WhatsApp</a></li>
             <li className="flex items-start gap-2"><Mail className="h-4 w-4 mt-0.5 text-primary" /><a href={`mailto:${EMAIL}`} className="hover:text-primary">{EMAIL}</a></li>
             <li className="flex items-start gap-2"><MapPin className="h-4 w-4 mt-0.5 text-primary" />{ADDRESS}</li>
           </ul>

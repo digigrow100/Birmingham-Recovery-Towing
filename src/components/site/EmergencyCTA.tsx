@@ -1,4 +1,5 @@
-import { Phone, MessageCircle } from "lucide-react";
+import { Phone } from "lucide-react";
+import { WhatsAppIcon } from "@/components/site/WhatsAppIcon";
 import { PHONE, PHONE_DISPLAY, WHATSAPP } from "@/lib/assets";
 
 export function EmergencyCTA() {
@@ -13,7 +14,7 @@ export function EmergencyCTA() {
             <Phone className="h-5 w-5" /> Call {PHONE_DISPLAY}
           </a>
           <a href={WHATSAPP} className="inline-flex items-center gap-2 rounded-full bg-[#25D366] px-7 py-4 text-base font-semibold text-white shadow-xl hover:scale-[1.02] transition">
-            <MessageCircle className="h-5 w-5" /> WhatsApp Now
+            <WhatsAppIcon className="h-5 w-5" /> WhatsApp Now
           </a>
         </div>
       </div>
