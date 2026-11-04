@@ -7,7 +7,7 @@ import { IMG } from "@/lib/assets";
 import { pageMeta } from "@/lib/seo";
 
 const faqs = [
-  { q: "Are you really available 24 hours a day, 7 days a week?", a: "Yes — our phone and WhatsApp lines are answered day or night, including weekends, bank holidays and Christmas Day." },
+  { q: "Are you really available 24 hours a day, 7 days a week?", a: "Yes — our phone line is answered day or night, including weekends, bank holidays and Christmas Day." },
   { q: "How quickly can you reach me in Birmingham?", a: "Response times vary by location and traffic — we dispatch the nearest available truck immediately and keep you updated on arrival time." },
   { q: "How much does car recovery cost in Birmingham?", a: "Call us with your location and situation and we'll give you an upfront fixed price — no hidden fees, ever." },
   { q: "Do you cover long-distance and nationwide vehicle transport?", a: "Yes, we offer nationwide vehicle recovery and transport across the entire UK — from Birmingham to Scotland, London or anywhere else." },

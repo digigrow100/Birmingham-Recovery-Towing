@@ -5,9 +5,8 @@ import { EmergencyCTA } from "@/components/site/EmergencyCTA";
 import { ContactForm } from "@/components/site/ContactForm";
 import { AreasCovered } from "@/components/site/AreasCovered";
 import { ReviewsCarousel } from "@/components/site/ReviewsCarousel";
-import { WhatsAppIcon } from "@/components/site/WhatsAppIcon";
 import { SERVICES } from "@/lib/services";
-import { IMG, PHONE, PHONE_DISPLAY, WHATSAPP } from "@/lib/assets";
+import { IMG, PHONE, PHONE_DISPLAY } from "@/lib/assets";
 import { pageMeta } from "@/lib/seo";
 import { Phone, Clock, Zap, Users, Banknote, ShieldCheck, Star, PhoneCall, Truck, CheckCircle2 } from "lucide-react";
 
@@ -47,9 +46,6 @@ function Home() {
           <div className="mt-5 flex flex-wrap gap-3">
             <a href={`tel:${PHONE}`} className="inline-flex items-center gap-2 rounded-full bg-primary px-7 py-4 text-base font-semibold text-primary-foreground shadow-xl shadow-primary/40 hover:scale-[1.02] transition">
               <Phone className="h-5 w-5" /> Call {PHONE_DISPLAY}
-            </a>
-            <a href={WHATSAPP} className="inline-flex items-center gap-2 rounded-full bg-[#25D366] px-7 py-4 text-base font-semibold text-white shadow-xl hover:scale-[1.02] transition">
-              <WhatsAppIcon className="h-5 w-5" /> WhatsApp Now
             </a>
           </div>
           <div className="mt-8 grid grid-cols-2 md:grid-cols-4 gap-4 max-w-3xl">
@@ -109,7 +105,7 @@ function Home() {
         <h2 className="text-4xl md:text-5xl font-black text-center">How It Works</h2>
         <div className="mt-12 grid gap-6 md:grid-cols-3">
           {[
-            { n: "01", i: PhoneCall, t: "Call or WhatsApp", d: "Phone or WhatsApp our 24/7 Birmingham line and tell us your location." },
+            { n: "01", i: PhoneCall, t: "Call Us", d: "Phone our 24/7 Birmingham line and tell us your location." },
             { n: "02", i: Truck, t: "We Dispatch Fast", d: "The nearest available truck is dispatched immediately to reach you as fast as possible." },
             { n: "03", i: CheckCircle2, t: "Problem Solved", d: "We recover your vehicle or transport it safely to any UK destination." },
           ].map((s) => (

@@ -27,7 +27,7 @@ function VehicleTransport() {
         faqs={[
           { q: "Can you transport my car from Birmingham to London?", a: "Yes — we offer nationwide vehicle transport from Birmingham to anywhere in the UK." },
           { q: "Can you transport automatic transmission cars?", a: "Yes — we use flatbed transport methods that are safe for all transmissions." },
-          { q: "How do I get a quote for vehicle transport?", a: "Call or WhatsApp us with your collection and delivery locations for an instant fixed-fee quote." },
+          { q: "How do I get a quote for vehicle transport?", a: "Call us with your collection and delivery locations for an instant fixed-fee quote." },
         ]}
       />
     </SiteLayout>
